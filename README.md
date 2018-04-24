@@ -1,7 +1,7 @@
 ## 物流配送管理系统
-### 这是我的一次webgis二次开发作业。
-### 开发者：loyoung
-### 开发时间：2018/03
+#### 这是我的一次webgis二次开发作业。
+#### 作者：loyoung
+### 时间：2018/03
 ### 语言：html、css、JavaScript、jsp.
 ### 数据库：mysql.
 ### 环境：win10、eclipse、sublime.
