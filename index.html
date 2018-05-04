@@ -1,0 +1,82 @@
+<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
+<html xmlns="http://www.w3.org/1999/xhtml">
+<head>
+    <title>配送管理系统</title>
+    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+    <meta name="author" content="LoYoung,qq1162047695" />
+    <meta name="keywords" content="Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+
+    <script src="js/jquery-1.11.0.min.js"></script>
+    <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
+    <link href="css/style.css" rel='stylesheet' type='text/css' />
+    <link href='http://fonts.useso.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
+</head>
+<body>
+    <!--页面头部-->
+    <div id="home" class="header">
+        <div class="top_name">
+            <h1><a href="index.html">欢迎进入物流配送管理系统</a></h1>
+        </div>
+        <!--主菜单栏-->
+        <div class="navgation">
+            <div class="menu">
+                <ul class="nav" id="nav">
+                    <li><a href="index.html">主页</a></li>
+                    <li><a href="dingdan.html">订单管理</a></li>
+                    <li><a href="fenxi.html">路径规划</a></li>
+                    <li><a href="tongji.html">统计分析</a></li>
+                    <li><a href="help.html">帮助</a></li>
+                </ul>
+                <!--start-top-nav-script-->
+                <script type="text/javascript" src="js/responsive-nav.js"></script>
+                
+                <script type="text/javascript">
+                    jQuery(document).ready(function($) {
+                        $(".scroll").click(function(event){     
+                            event.preventDefault();
+                            $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
+                            });
+                        });
+                </script>
+                <!--//End-top-nav-script-->
+            </div>
+            <!--搜索框-->
+            <div class="search2">
+                <form>
+                    <input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value    'Search..';}"/>
+                    <input type="submit" value="">
+                </form>
+            </div>
+            <!--clearfix样式，用来清除偏移量和层之间控制位置用的！美观点-->
+            <div class="clearfix"> </div>
+        </div>
+    </div>
+    <!--内容版面-->
+    <div class="banner">
+        <div class="container">
+            <div class="bnr-text">
+                <h1>欢迎进入物流配送管理系统</h1>
+                <div class="bttn">
+                    <!--跳转到本页面顶部，写#点了会跳一下的-->
+                    <a href="#">欢迎</a>
+                </div>
+            </div>
+        </div>
+    </div>
+    <!--底部说明-->
+    <div class="footer">
+        <div class="container">
+            <div class="footer-text">
+                <p>地理信息科学</p>
+            </div>
+        </div>
+        <!--置顶标签-->
+        <a href="#home" id="toTop" class="scroll" style="display: block;"> 
+            <!--opacity,不透明级别-->
+            <span id="toTopHover" style="opacity: 1;"> </span>
+        </a>
+    </div>
+</body>
+</html>
