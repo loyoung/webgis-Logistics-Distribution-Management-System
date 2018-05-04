@@ -1,25 +1,22 @@
-<!DOCTYPE html PUBLIC "-//W3C//DTD XHTML 1.0 Transitional//EN" "http://www.w3.org/TR/xhtml1/DTD/xhtml1-transitional.dtd">
-<html xmlns="http://www.w3.org/1999/xhtml">
+<!DOCTYPE html>
+<html>
 <head>
-    <title>物流配送管理系统</title>
-    <meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
-    <meta name="author" content="LoYoung,qq1162047695" />
+    <title>帮助</title>
     <meta name="keywords" content="Bootstrap Responsive Templates, Iphone Compatible Templates, Smartphone Compatible Templates, Ipad Compatible Templates, Flat Responsive Templates"/>
-    <meta name="viewport" content="width=device-width, initial-scale=1">
-
-    <script src="js/jquery-1.11.0.min.js"></script>
+    <meta name="viewport" content="width=device-width, initial-scale=1">    
     <script type="application/x-javascript"> addEventListener("load", function() { setTimeout(hideURLbar, 0); }, false); function hideURLbar(){ window.scrollTo(0,1); } </script>
+    <script src="js/jquery-1.11.0.min.js"></script>
     <link href="css/bootstrap.css" rel='stylesheet' type='text/css' />
     <link href="css/style.css" rel='stylesheet' type='text/css' />
     <link href='http://fonts.useso.com/css?family=Arimo:400,700,400italic,700italic' rel='stylesheet' type='text/css'>
 </head>
 <body>
-    <!--页面头部-->
+    <!--顶部文件-->
     <div id="home" class="header">
         <div class="top_name">
             <h1><a href="index.html">欢迎进入物流配送管理系统</a></h1>
         </div>
-        <!--主菜单栏-->
+        <!--导航栏-->
         <div class="navgation">
             <div class="menu">
                 <ul class="nav" id="nav">
@@ -27,56 +24,41 @@
                     <li><a href="dingdan.html">订单管理</a></li>
                     <li><a href="fenxi.html">路径规划</a></li>
                     <li><a href="tongji.html">统计分析</a></li>
-                    <li><a href="help.html">帮助</a></li>
+                    <li><a href="help.html" class="active">帮助</a></li>
                 </ul>
                 <!--start-top-nav-script-->
                 <script type="text/javascript" src="js/responsive-nav.js"></script>
-                
                 <script type="text/javascript">
                     jQuery(document).ready(function($) {
                         $(".scroll").click(function(event){     
                             event.preventDefault();
                             $('html,body').animate({scrollTop:$(this.hash).offset().top},1000);
-                            });
                         });
+                    });
                 </script>
                 <!--//End-top-nav-script-->
             </div>
-            <!--搜索框-->
             <div class="search2">
                 <form>
-                    <input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value    'Search..';}"/>
-                    <input type="submit" value="">
+                    <input type="text" value="Search.." onFocus="this.value = '';" onBlur="if (this.value == '') {this.value = 'Search..';}"/>
+                        <input type="submit" value="">
                 </form>
             </div>
-            <!--clearfix样式，用来清除偏移量和层之间控制位置用的！美观点-->
             <div class="clearfix"> </div>
         </div>
     </div>
-    <!--内容版面-->
-    <div class="banner">
-        <div class="container">
-            <div class="bnr-text">
-                <h1>欢迎进入物流配送管理系统</h1>
-                <div class="bttn">
-                    <!--跳转到本页面顶部，写#点了会跳一下的-->
-                    <a href="#">欢迎</a>
-                </div>
-            </div>
-        </div>
+    <!--内容板块-->
+    <div class="blog">
+        <li>关于我们</li>
+        <p></br>随着社会的发展，人们的生活节奏越来越快，人们足不出户或腾不出时间的现象越来越普遍，网购已然成为一种潮流，为了解决外送的地域限制和满足商户和个人的交易需求和提高双方的用户体验，本系统针对<b>快递公司</b>而开发。基于百度地图，实现物流订单进行可视化、增删改、查询订单配送情况；同时为快递员派送快递规划路径，实现单点最短路径、多点最优路径、缓冲分析和导航功能等；快递公司可在统计分析子系统查看热力图、轨迹图等，针对快递的分布作出更合理的派送方案。
+        </p>
+    </br>
+        <li>联系我们</li>
+        <p></br>本系统资源学院14级地理信息科学二班loyoung完成</br></p>
+        <h2 >contacting us when there is any difficulty in using .QQ1162047695</h2>
+
+
     </div>
-    <!--底部说明-->
-    <div class="footer">
-        <div class="container">
-            <div class="footer-text">
-                <p>地理信息科学</p>
-            </div>
-        </div>
-        <!--置顶标签-->
-        <a href="#home" id="toTop" class="scroll" style="display: block;"> 
-            <!--opacity,不透明级别-->
-            <span id="toTopHover" style="opacity: 1;"> </span>
-        </a>
-    </div>
+
 </body>
 </html>
